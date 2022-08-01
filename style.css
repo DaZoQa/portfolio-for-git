@@ -7,19 +7,19 @@
 body {
   font-family: "Dosis", sans-serif;
 }
-::-webkit-scrollbar{
-  background-color: #FFBE1A;
+::-webkit-scrollbar {
+  background-color: #ffbe1a;
   width: 16px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 10px;
   background-color: #fff;
   margin-left: 3px;
-  transition: .5s;
+  transition: 0.5s;
 }
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   width: 10px;
-  transition: .5s;
+  transition: 0.5s;
   background-color: rgb(179, 179, 179);
   margin-left: 3px;
 }
@@ -92,44 +92,44 @@ h1 {
   margin-right: 75px;
   z-index: 9999999;
 }
-.about-text{
+.about-text {
   width: 590px;
 }
-.title-span{
+.title-span {
   font-size: 1.5rem;
   color: #fff;
 }
-.title-span:after{
-  content: '';
+.title-span:after {
+  content: "";
   display: inline-block;
   width: 70px;
   height: 3px;
-  margin-left: 30px;
+  margin-left: 20px;
   margin-bottom: 8px;
   background-color: #fff;
 }
-.about-text p{
+.about-text p {
   margin: 25px 0 70px 0;
   font-size: 1rem;
   color: #fff;
 }
-.skills-table{
+.skills-table {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.skill:first-child{
+.skill:first-child {
   margin-right: 60px;
 }
-.skill li{
+.skill li {
   color: #fff;
   margin-left: 13px;
 }
-.skill li::marker{
-  color: #FFBE1A;
+.skill li::marker {
+  color: #ffbe1a;
 }
-.work-page{
+.work-page {
   background-color: #161616;
   width: 100%;
   display: flex;
@@ -137,20 +137,21 @@ h1 {
   padding: 90px 0;
   align-items: center;
 }
-.work-page .nav-button{
+.work-page .nav-button {
   color: #fff;
   font-size: 1rem;
-  border-bottom: 3px solid #FFBE1A;
+  border-bottom: 3px solid #ffbe1a;
   cursor: default;
 }
-.works-gallery{
+.works-gallery {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 950px;
 }
-.work-card{
+.work-card {
+  margin-bottom: 40px;
   width: 200px;
   height: 150px;
   border-radius: 20px;
@@ -159,9 +160,74 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
-.card-title{
+.card-title {
   color: #fff;
   font-weight: 700;
   margin-top: 10px;
   font-size: 1.1rem;
+}
+.contact-page {
+  padding: 90px 0 200px 0;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+aside {
+  width: 40%;
+}
+aside p {
+  margin-top: 22px;
+  color: #fff;
+}
+form {
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.input-title {
+  color: #fff;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+input,
+textarea {
+  width: 300px;
+  height: 20px;
+  background-color: rgba(184, 184, 184, 0.25);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 15px 0 15px 15px;
+  font-family: inherit;
+  color: #fff;
+  overflow: hidden;
+}
+textarea{
+  height: 100px;
+}
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #ffbe1a;
+}
+footer li{
+  color: #fff;
+}
+footer h1{
+  color: #fff;
+  margin: 30px 0;
+}
+footer span{
+  color: rgba(255, 255, 255, 0.5);;
 }
