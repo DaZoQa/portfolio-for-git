@@ -18,14 +18,14 @@
         </ul>
       </nav>
       <div id="home" class="greeting">
-        <img src="#" alt="" />
+        <img style="object-fit: cover;" src="/img/qPxUKKdxDAU.jpg" alt="" />
         <h1>Dmitry Tutushkin</h1>
         <span>I am a Front-End Dev</span>
       </div>
     </header>
     <div id="about" class="about-page">
       <div class="left-side">
-        <img src="#" alt="" />
+        <img style="object-fit: cover;" src="/img/qPxUKKdxDAU.jpg" alt="" />
       </div>
       <div class="right-side">
         <div class="about-text">
@@ -97,19 +97,20 @@
             quis.
           </p>
         </aside>
-        <form>
+        <form action="send.php" method="send">
           <span class="input-title">
             Name
           </span>
-          <input type="text" placeholder="Write your name here">
+          <input type="text" name="Name" placeholder="Write your name here" required>
           <span class="input-title">
             Email
           </span>
-          <input type="email" placeholder="Write your email here">
+          <input type="email" name="email" placeholder="Write your email here" required>
           <span class="input-title">
             Message
           </span>
-          <textarea placeholder="Write your message here" style="resize: none;"></textarea>
+          <textarea name="message" placeholder="Write your message here" style="resize: none;"></textarea>
+          <input class="snd-btn" type="submit" value="Send message" required>
         </form>
       </div>
     </div>
@@ -123,9 +124,9 @@
       <h1>
         Dmitry Tutushkin
       </h1>
-      <span>
+      <address>
         egikvtumane916@gmail.com
-      </span>
+      </address>
     </footer>
     <script src="/script.js"></script>
   </body>
