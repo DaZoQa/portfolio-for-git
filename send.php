@@ -1,22 +1,18 @@
-$name = $_POST['Name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+<?php
 
-$name = htmlspecialchars($name);
-$email = htmlspecialchars($email);
-$message = htmlspecialchars($message);
+$recepient = 'egikvtumane916@gmail.com';
+$siteName = 'Portfolio';
 
-$name = urldecode($name);
-$email = urldecode($email);
-$message = urldecode($message);
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
+$message = trim($_POST["message"]);
+$headers = "From:" . $email
+$emailMessage = "Имя: $name \nСообщение: $message";
+$pageTitle = "Заявка с сайта:\"$siteName\"";
 
-$name = trim($name);
-$email = trim($email);
-$message = trim($message);
+mail($recepient, 
+$pageTitle, 
+$emailMessage, 
+$headers);
 
-if(mail("egikvtumane916@gmail.com", "ФИО: ".$name"", ".$message","From: ".$email" \r\n");)
-{
-    echo "сообщение успешно отправлено";
-} else {
-    echo "при отправке сообщения возникли ошибки";
-}
+?>
