@@ -12,7 +12,11 @@ var workPage       = document.querySelector("#work");
 var contactPage    = document.querySelector("#contact");
 
 homeBtn.addEventListener('click', () =>{
-  scrollTo(homePage);
+  window.scroll({
+    left: 0,
+    top: 0,
+    behavior: 'smooth'
+  })
 })
 aboutBtn.addEventListener('click', () =>{
   scrollTo(aboutPage);
@@ -24,7 +28,11 @@ contactBtn.addEventListener('click', () =>{
   scrollTo(contactPage);
 })
 footHomeBtn.addEventListener('click', () =>{
-  scrollTo(homePage);
+  window.scroll({
+    left: 0,
+    top: 0,
+    behavior: 'smooth'
+  })
 })
 footAboutBtn.addEventListener('click', () =>{
   scrollTo(aboutPage);
